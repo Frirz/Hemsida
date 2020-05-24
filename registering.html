@@ -18,31 +18,35 @@
 <a href="forum.html"><li>forum</li></a>
 </ul>
 </div>
-
+    
 
 <form action="action_page.php">
   <div class="container">
-    <h1><l>Registrera</l></h1>
+    <div class="item">
+      <h1><l>Registrera</l></h1>
+    </div>
+    <div class="item">
+        <label for="email"><b><l>Email</l></b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    </div>
+    <div class="item">
+        <label for="psw"><b><l>Password</l></b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    </div>
 
-  
+    <div class="item">
+        <label for="psw-repeat"><b><l>Repeat Password</l></b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    </div>
 
-    <label for="email"><b><l>Email</l></b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <div class="item">
+        <button type="submit" class="registerbtn">Registrera</button>
+    </div>
 
-    <label for="psw"><b><l>Password</l></b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label for="psw-repeat"><b><l>Repeat Password</l></b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-   
-
-    
-    <button type="submit" class="registerbtn">Registrera</button>
-  </div>
-
-  <div class="container signin">
-    <p>Har du redan ett konto? <a href="Inlogg.html">Logga in</a>.</p>
-  </div>
+      <div class="item">
+        <p>Har du redan ett konto? <a href="Inlogg.html">Logga in</a>.</p>
+      </div>
+    </div>
 </form>
     
 </div>
