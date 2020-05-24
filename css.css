@@ -45,7 +45,6 @@ background-color: #656562;
 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 background-image: url("JP%20Telefon.png");
 width:25%;
-lö
 }
 /* For mobile phones: */
 [class*="middle_"] {
@@ -68,9 +67,6 @@ background-color: #565644;
 .mellan_3 {
 width: 100%;
 height: 300px;
-color: #fff;
-background-color: #000; /*blå*/
-background-image:url("JP%20Telefon.png");
 background-position: center;
 background-size: contain;
 background-repeat: no-repeat;
@@ -82,8 +78,6 @@ width: 25%;
 }
 .stor_2 {
 width: 50%;
-background-color: darkgreen;
-background-image:url(JP.png);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -97,7 +91,8 @@ background-color: #00FF00;
 }
 body{
 background-image:url(JPG.png);
-    
+     margin: 0;
+    padding: 0;
 }
 }
 
@@ -105,19 +100,24 @@ background-image:url(JPG.png);
 
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  width: 300px;
+  margin: auto;
 }
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 40%;
+  width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
+  margin: 10px 0 1px 0;
   border: none;
   background: #f1f1f1;
-margin-left: 425px;
-    margin-top: 100px;
+
+  
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -141,11 +141,9 @@ hr {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 40%;
+  width: 100%;
   opacity: 0.9;
-    margin-left: 425px;
-    margin-top: -12%;
-    
+   
 }
 
 .registerbtn:hover {
@@ -161,12 +159,10 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
-    margin: 0px 425px;
+   
 }
 
-l{
-    margin-left: 425px;
-    margin-top: -100%;
+
 }
 
 audio {
@@ -174,3 +170,99 @@ audio {
     margin-top: -100px;
     margin-bottom: -18px;
 }
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
